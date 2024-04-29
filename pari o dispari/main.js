@@ -11,7 +11,7 @@
 let sceltaUtente = prompt("scegli pari o dispari")
 console.log(sceltaUtente);
 // chiedo all'utente un numero compreso tra 1 e 5
-let sceltaUtenteNumero = prompt("scegli un numero da 1 a 5")
+let sceltaUtenteNumero = parseInt(prompt("scegli un numero da 1 a 5"));
 console.log(sceltaUtenteNumero);
 
 // funzione numero random per pc
@@ -20,3 +20,21 @@ function getRandomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 console.log(numeroComputer);
+
+// somma risultati
+let risultato = sceltaUtenteNumero + numeroComputer;
+console.log(risultato);
+
+
+function pariOrDispari( risultato ) {
+	
+	//controllo che "numero", cioè il valore fornito sia pari o dispari
+	if( risultato % 2 == 0 ) {
+		let testo = "pari";
+		return testo;
+	}
+	
+	return "dispari";
+
+}
+
