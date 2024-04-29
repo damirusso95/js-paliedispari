@@ -14,3 +14,9 @@ console.log(sceltaUtente);
 let sceltaUtenteNumero = prompt("scegli un numero da 1 a 5")
 console.log(sceltaUtenteNumero);
 
+// funzione numero random per pc
+let numeroComputer = getRandomNumber(1, 5);
+function getRandomNumber(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+console.log(numeroComputer);
