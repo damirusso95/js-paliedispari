@@ -5,3 +5,12 @@
 // 4) Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione).
 // 5) Dichiariamo chi ha vinto.
 // BONUS: scriviamo sul dom
+
+
+// chiediamo all'utente su cosa puntare
+let sceltaUtente = prompt("scegli pari o dispari")
+console.log(sceltaUtente);
+// chiedo all'utente un numero compreso tra 1 e 5
+let sceltaUtenteNumero = prompt("scegli un numero da 1 a 5")
+console.log(sceltaUtenteNumero);
+
