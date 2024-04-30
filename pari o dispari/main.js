@@ -14,27 +14,42 @@ console.log(sceltaUtente);
 let sceltaUtenteNumero = parseInt(prompt("scegli un numero da 1 a 5"));
 console.log(sceltaUtenteNumero);
 
+
+
 // funzione numero random per pc
 let numeroComputer = getRandomNumber(1, 5);
+console.log(numeroComputer);
+
 function getRandomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
-console.log(numeroComputer);
+
 
 // somma risultati
-let risultato = sceltaUtenteNumero + numeroComputer;
-console.log(risultato);
+let risultatoSomma = sceltaUtenteNumero + numeroComputer;
+console.log("il risultato è:" + risultatoSomma);
 
 
-function pariOrDispari( risultato ) {
-	
+let risultato = pariOrDispari(risultatoSomma);
+
+function pariOrDispari( risultatoSomma ) {
+    
+    	
 	//controllo che "numero", cioè il valore fornito sia pari o dispari
-	if( risultato % 2 == 0 ) {
-		let testo = "pari";
-		return testo;
+	if( risultatoSomma % 2 == 0 ) {
+		 var testo = "vince pari";
+         console.log(testo);
+		        
 	}
-	
-	return "dispari";
+   	
+	else{
+         var testo = "vince dispari";
+         console.log(testo);
 
+    };
+ 
 }
+
+
+
 
